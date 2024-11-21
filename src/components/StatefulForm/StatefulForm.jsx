@@ -5,10 +5,18 @@ const StatefulForm = () => {
     const [name, setName] = useState(null);
     const [email, setEmail] = useState(null);
     const [password, setPassword] = useState(null);
+    const [error, setError] = useState('')
 
     const handleSubmit = e => {
         e.preventDefault();
-        console.log(name, email, password);
+
+        if(password.length < 6){
+            setError("password has must be 6 carecter or longer")
+        }
+        else{
+            setError('');
+            console.log(name, email, password);
+        }
         
     }
 
@@ -44,6 +52,9 @@ const StatefulForm = () => {
                 <br />
                 <input className="border-2 active:bg-white active:text-black" type="submit" value="Submit" />
             </form>
+            {
+                error && <p>{error}</p>
+            }
         </div>
     );
 };
