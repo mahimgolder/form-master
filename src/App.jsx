@@ -1,6 +1,6 @@
 
 import './App.css'
-import Grandpa from './components/grandPa/Grandpa'
+import GrandPa from './components/grandPa/GrandPa'
 // import ReuseableForm from './components/reuseableForm/ReuseableForm'
 // import Count1 from './components/count1/Count1'
 // import Count2 from './components/count2/Count2'
@@ -22,7 +22,7 @@ function App() {
       <h1>Form master</h1>
 
 
-      <Grandpa ></Grandpa>
+      <GrandPa ></GrandPa>
       {/* <SympleForm></SympleForm> */}
       {/* <StatefulForm></StatefulForm> */}
       {/* <RefForm></RefForm> */}
