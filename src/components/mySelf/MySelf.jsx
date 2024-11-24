@@ -1,11 +1,11 @@
 import Special from "../special/Special";
 
-const MySelf = () => {
+const MySelf = ({asset}) => {
     return (
         <div>
             <h1>MySelf.jsx</h1>
             <section className="flex">
-                <Special></Special>
+                <Special asset={asset}></Special>
             </section>
         </div>
     );
